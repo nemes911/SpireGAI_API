@@ -1,0 +1,48 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpireGAI_API.AppHost", "SpireGAI_API.AppHost\SpireGAI_API.AppHost.csproj", "{49903DDB-8483-4E2E-B8E4-7453C89B89C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpireGAI_API.ServiceDefaults", "SpireGAI_API.ServiceDefaults\SpireGAI_API.ServiceDefaults.csproj", "{44B742E8-E27E-0C98-938A-6802C3E5A1C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpireGAI_API.ApiService", "SpireGAI_API.ApiService\SpireGAI_API.ApiService.csproj", "{F0DDDFD3-6901-7388-45B2-0BB81D509AFB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpireGAI_API.Web", "SpireGAI_API.Web\SpireGAI_API.Web.csproj", "{77CFC90E-AF52-E382-825B-F6A73690154A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpireGAI_API.Tests", "SpireGAI_API.Tests\SpireGAI_API.Tests.csproj", "{1B3BF857-089D-3618-F547-FA4E0404DA0D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{49903DDB-8483-4E2E-B8E4-7453C89B89C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49903DDB-8483-4E2E-B8E4-7453C89B89C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49903DDB-8483-4E2E-B8E4-7453C89B89C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49903DDB-8483-4E2E-B8E4-7453C89B89C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44B742E8-E27E-0C98-938A-6802C3E5A1C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44B742E8-E27E-0C98-938A-6802C3E5A1C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44B742E8-E27E-0C98-938A-6802C3E5A1C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44B742E8-E27E-0C98-938A-6802C3E5A1C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0DDDFD3-6901-7388-45B2-0BB81D509AFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0DDDFD3-6901-7388-45B2-0BB81D509AFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0DDDFD3-6901-7388-45B2-0BB81D509AFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0DDDFD3-6901-7388-45B2-0BB81D509AFB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77CFC90E-AF52-E382-825B-F6A73690154A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77CFC90E-AF52-E382-825B-F6A73690154A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77CFC90E-AF52-E382-825B-F6A73690154A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77CFC90E-AF52-E382-825B-F6A73690154A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3BF857-089D-3618-F547-FA4E0404DA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3BF857-089D-3618-F547-FA4E0404DA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3BF857-089D-3618-F547-FA4E0404DA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3BF857-089D-3618-F547-FA4E0404DA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87AC7683-442B-40FD-8870-6AEE22BC6DA4}
+	EndGlobalSection
+EndGlobal
