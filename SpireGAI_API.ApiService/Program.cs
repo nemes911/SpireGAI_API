@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using SpireGAI_API.ApiService.Data;
+using StackExchange.Redis;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults & Aspire client integrations.
@@ -5,6 +9,17 @@ builder.AddServiceDefaults();
 
 // Add services to the container.
 builder.Services.AddProblemDetails();
+
+var dbConfig = builder.Configuration.GetSection("Database");
+var connectionString =
+    $"Host={dbConfig["Host"]};Database={dbConfig["Name"]};Username={dbConfig["User"]};Password={dbConfig["Password"]}";
+
+builder.Services.AddDbContext<SpireDbContext>(options =>
+    options.UseNpgsql(connectionString));
+
+var redis = ConnectionMultiplexer.Connect("127.0.0.1:6379");
+
+IDatabase db = redis.GetDatabase();
 
 var app = builder.Build();
 

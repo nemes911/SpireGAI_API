@@ -1,3 +1,5 @@
+using Npgsql;
+
 namespace SpireGAI_API.Tests;
 
 public class WebTests
@@ -25,4 +27,15 @@ public class WebTests
         // Assert
         Assert.Equal(HttpStatusCode.OK, response.StatusCode);
     }
-}
+
+    [Fact]
+    public async Task CheckDbConnection()
+    {
+        var connectionString = "Host=localhost;Database=postgres;Username=postgres;Password=1243";
+
+        await using var conn = new NpgsqlConnection(connectionString);
+        await conn.OpenAsync();
+
+        Assert.Equal(System.Data.ConnectionState.Open, conn.State);
+    }
+}   
