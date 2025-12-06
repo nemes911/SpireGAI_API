@@ -6,7 +6,7 @@ namespace SpireGAI_API.ApiService.Redis.implementation
     {
         public Task HandleAsync(LoginSystemEvent payload)
         {
-            Console.WriteLine($"Пользователь {payload.name} вошёл в систему в {DateTime.UtcNow}");
+            Console.WriteLine($"Пользователь {payload.user.name} вошёл в систему в {DateTime.UtcNow}");
 
             return Task.CompletedTask;
         }

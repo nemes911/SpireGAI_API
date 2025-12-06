@@ -27,8 +27,4 @@
     <ProjectReference Include="..\SpireGAI_API.ServiceDefaults\SpireGAI_API.ServiceDefaults.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>
