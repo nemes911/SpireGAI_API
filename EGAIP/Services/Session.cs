@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EGAIP.Sessions
+namespace EGAIP.Services
 {
     internal class Session
     {

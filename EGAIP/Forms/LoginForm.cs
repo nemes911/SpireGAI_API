@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace EGAIP.API.Forms
+namespace EGAIP.Forms
 {
-    public partial class AdministratorStationForm : Form
+    public partial class LoginForm : Form
     {
-        public AdministratorStationForm()
+        public LoginForm()
         {
             InitializeComponent();
         }
