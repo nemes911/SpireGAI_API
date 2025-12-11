@@ -1,6 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using SpireGAI_API.ApiService.Data;
 using StackExchange.Redis;
+using SpireGAI_API.ApiService.Authoriz.implemantation;
+using SpireGAI_API.ApiService.Authoriz.Interface;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +16,8 @@ builder.Services.AddProblemDetails();
 var dbConfig = builder.Configuration.GetSection("Database");
 var connectionString =
     $"Host={dbConfig["Host"]};Database={dbConfig["Name"]};Username={dbConfig["User"]};Password={dbConfig["Password"]}";
+
+builder.Services.AddScoped<IAuthorizationService, AuthorizationService>();
 
 builder.Services.AddDbContext<SpireDbContext>(options =>
     options.UseNpgsql(connectionString));

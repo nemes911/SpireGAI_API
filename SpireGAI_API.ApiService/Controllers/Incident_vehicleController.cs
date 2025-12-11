@@ -8,22 +8,18 @@ namespace SpireGAI_API.ApiService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class IncedentsController : ControllerBase
+    public class Incident_vehicleController : ControllerBase
     {
         private readonly IMediator _mediator;
 
-        public IncedentsController(IMediator mediator) => _mediator = mediator;
+        public Incident_vehicleController(IMediator mediator) => _mediator = mediator;
 
         [HttpPost]
-        public async Task<incident> Add([FromBody] incident incident) 
+        public async Task<incident_vehicle> Add([FromBody] incident_vehicle incident_Vehicle) 
         {
-            var result = await _mediator.Send(new AddCommand<incident>(incident));
+            var result = await _mediator.Send(new AddCommand<incident_vehicle>(incident_Vehicle));
 
             return result;
         }
-
-
-
-        
     }
 }

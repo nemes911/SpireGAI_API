@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpireGAI_API.AppHost", "SpireGAI_API.AppHost\SpireGAI_API.AppHost.csproj", "{49903DDB-8483-4E2E-B8E4-7453C89B89C5}"
 EndProject
@@ -11,6 +11,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpireGAI_API.Web", "SpireGAI_API.Web\SpireGAI_API.Web.csproj", "{77CFC90E-AF52-E382-825B-F6A73690154A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpireGAI_API.Tests", "SpireGAI_API.Tests\SpireGAI_API.Tests.csproj", "{1B3BF857-089D-3618-F547-FA4E0404DA0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EGAIP", "EGAIP\EGAIP.csproj", "{B8DFFB73-C36F-4C6C-8FB1-21B117AE582D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -38,6 +40,10 @@ Global
 		{1B3BF857-089D-3618-F547-FA4E0404DA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B3BF857-089D-3618-F547-FA4E0404DA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B3BF857-089D-3618-F547-FA4E0404DA0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8DFFB73-C36F-4C6C-8FB1-21B117AE582D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8DFFB73-C36F-4C6C-8FB1-21B117AE582D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8DFFB73-C36F-4C6C-8FB1-21B117AE582D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8DFFB73-C36F-4C6C-8FB1-21B117AE582D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
